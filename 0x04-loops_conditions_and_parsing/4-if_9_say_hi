@@ -1,0 +1,11 @@
+on if more bucle
+a=1
+while [ $a -le 10 ]
+do
+	echo "Holberton School"
+	if [ $a == 9 ]
+	then
+		echo "Hi"
+	fi
+	((a++))
+done

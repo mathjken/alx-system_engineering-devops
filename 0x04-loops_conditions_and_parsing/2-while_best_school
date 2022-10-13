@@ -1,0 +1,7 @@
+cript run in loop while
+i=0
+while ((i<=9))
+do
+	echo "Holberton School"
+	((i++))
+done
