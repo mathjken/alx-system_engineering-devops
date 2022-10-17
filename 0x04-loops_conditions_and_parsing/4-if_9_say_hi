@@ -1,11 +1,15 @@
-on if more bucle
-a=1
-while [ $a -le 10 ]
+#!/usr/bin/env bash
+# print Best School 10 times using the while loop.
+#   on the 9th iteration print Hi before Best School.
+
+x=0
+
+while [ $x -lt 10 ]
 do
-	echo "Holberton School"
-	if [ $a == 9 ]
-	then
-		echo "Hi"
-	fi
-	((a++))
+  if [ $x -eq 9 ]
+  then
+    echo "Hi"	
+  fi
+  echo "Best School"
+  (( x++ ))
 done

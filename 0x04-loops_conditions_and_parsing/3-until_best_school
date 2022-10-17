@@ -1,7 +1,10 @@
-s script is displaying "Holberton School" 10 times
-i=0
-until [ $i -gt 9 ]
+#!/usr/bin/env bash
+# Display Best School 10 times via  an until loop.
+
+x=0
+
+until [ $x -eq 10 ]
 do
-	echo "Holberton School"
-	(( i++ ))
+  echo "Best School"
+  (( x++ ))
 done
