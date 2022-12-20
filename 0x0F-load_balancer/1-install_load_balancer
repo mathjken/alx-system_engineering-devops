@@ -13,11 +13,11 @@ server_config=\
 frontend mathjk-frontend
         bind *:80
         mode http
-        default_backend ehoneah-backend
+        default_backend mathjk-backend
 backend mathjk-backend
         balance roundrobin
-        server 63210-web-01 100.25.19.204:80 check
-        server 63210-web-02 54.157.159.85:80 check
+        server 65918-web-01 34.203.33.229:80 check
+        server 65918-web-02 54.237.66.163:80 check
 "
 echo "$server_config" | sudo tee -a /etc/haproxy/haproxy.cfg
 
